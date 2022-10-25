@@ -28,10 +28,8 @@ import           Control.Monad.State       (StateT, get, gets, put, evalStateT, 
 import           Control.Monad.Trans       (MonadTrans, lift)
 import           Control.Monad.Trans.Maybe (MaybeT)
 import           Control.Monad.Writer      (WriterT)
-#if !MIN_VERSION_base(4,11,0)
 import           Control.Monad.Fail        (MonadFail)
 import           Data.Semigroup            (Semigroup, (<>))
-#endif
 
 import qualified Control.Monad.Trans.State.Lazy as LazyState
 
